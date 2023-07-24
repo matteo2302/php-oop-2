@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/item.php';
+include __DIR__ . '/item.php';
 class Animal extends Item{
   public $animal;
   public $function;
@@ -10,5 +10,6 @@ class Animal extends Item{
     $this -> function = $function;
 }
 
-}
+};
+$dog = new Animal('340g',12.99, null, 'dogs','food');
 ?>

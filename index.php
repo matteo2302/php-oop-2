@@ -1,7 +1,20 @@
 <?php
-include __DIR__ . '/animal.php';
 include __DIR__ . '/item.php';
+include __DIR__ . '/animal.php';
 
-$dog = new Animal('340g',12.99, null, 'dogs','food');
+
 var_dump($dog);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>petcommerce</title>
+</head>
+<body>
+  <ul>
+    
+  </ul>
+</body>
+</html>
