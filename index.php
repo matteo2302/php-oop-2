@@ -7,10 +7,10 @@ include __DIR__ . '/enviroment.php';
 
 
 $foods[
-  new Food('Almo Nature Cat Daily Lattina','150g','2.99','https://arcaplanet.vtexassets.com/arquivos/ids/245336/almo-daily-menu-cat-400-gr-vitello.jpg','gatto','lattina'),
-  new Food('Royal Canin Mini Adult''300g','4.99','https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg','cane','adult'),
-  new Food('Almo Nature Holistic Maintenance Medium Large Tonno e Riso''250g','3.99','https://arcaplanet.vtexassets.com/arquivos/ids/245173/almo-nature-holistic-cane-adult-medium-pollo-e-riso.jpg','cane','adult'),
-  new Food('Mangime per Pesci Guppy in Fiocchi''250g','3.99','https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg','pesci','tutte le età'),
+  new Food[$name => 'Almo Nature Cat Daily Lattina',$weight =>'150g',$price => '2.99',$image => 'https://arcaplanet.vtexassets.com/arquivos/ids/245336/almo-daily-menu-cat-400-gr-vitello.jpg',$animal => 'gatto',$type => 'lattina'],
+  new Food[$name => 'Royal Canin Mini Adult',$weight =>'300g',$price => '4.99',$image => 'https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg',$animal => 'cane', $type =>'adult'],
+  new Food[$name => 'Almo Nature Holistic Maintenance Medium Large Tonno e Riso',$weight ='250g',$price => '3.99',$image => 'https://arcaplanet.vtexassets.com/arquivos/ids/245173/almo-nature-holistic-cane-adult-medium-pollo-e-riso.jpg',$animal => 'cane',$type => 'adult'],
+  new Food[$name => 'Mangime per Pesci Guppy in Fiocchi',$weight =>'250g',$price => '3.99',$image => 'https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg',$animal => 'pesci', $type => 'tutte le età'],
 ];
 $eviroments[
   new Enviroment('Voliera Wilma in Legno','10kg','30.00','https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg','uccelli','3m','1.5m'),
