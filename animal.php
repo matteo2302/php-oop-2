@@ -4,8 +4,8 @@ class Animal extends Item{
   public $animal;
   public $function;
 
-  public function __constuct($weight,$price,$image,$animal,$function){
-    parent :: __constuct($weight,$price,$image);
+  public function __construct($weight,$price,$image,$animal,$function){
+    parent :: __construct($weight,$price,$image);
     $this -> animal = $animal;
     $this -> function = $function;
 }
