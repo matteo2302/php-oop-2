@@ -1,9 +1,27 @@
 <?php
 include __DIR__ . '/item.php';
-include __DIR__ . '/animal.php';
+include __DIR__ . '/toy.php';
+include __DIR__ . '/food.php';
+include __DIR__ . '/enviroment.php';
 
 
-var_dump($dog);
+
+$foods[
+  new Food('Almo Nature Cat Daily Lattina','150g','2.99','https://arcaplanet.vtexassets.com/arquivos/ids/245336/almo-daily-menu-cat-400-gr-vitello.jpg','gatto','lattina'),
+  new Food('Royal Canin Mini Adult''300g','4.99','https://arcaplanet.vtexassets.com/arquivos/ids/243820/royal-canin-size-cane-mini-adult.jpg','cane','adult'),
+  new Food('Almo Nature Holistic Maintenance Medium Large Tonno e Riso''250g','3.99','https://arcaplanet.vtexassets.com/arquivos/ids/245173/almo-nature-holistic-cane-adult-medium-pollo-e-riso.jpg','cane','adult'),
+  new Food('Mangime per Pesci Guppy in Fiocchi''250g','3.99','https://arcaplanet.vtexassets.com/arquivos/ids/272714/tetra-guppy-mini-flakes.jpg','pesci','tutte le età'),
+];
+$eviroments[
+  new Enviroment('Voliera Wilma in Legno','10kg','30.00','https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg','uccelli','3m','1.5m'),
+  new Enviroment('Cartucce Filtranti per Filtro EasyCrystal','100g','4.99','https://arcaplanet.vtexassets.com/arquivos/ids/272741/tetra-easycrystal-filterpack-250-300.jpg','pesci','5cm','6cm'),
+];
+$toys[
+  new Toy('Kong Classic','200g','7.99','https://arcaplanet.vtexassets.com/arquivos/ids/256599/kong-classic1.jpg','cani','masticazione'),
+  new Toy('Topini di peluche Trixie','50g','3.99','https://arcaplanet.vtexassets.com/arquivos/ids/223852/trixie-gatto-gioco-active-mouse-peluche.jpg','gatti','corsa'),
+];
+  
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,8 +31,15 @@ var_dump($dog);
   <title>petcommerce</title>
 </head>
 <body>
+  <?php foreach($foods as $food) : ?>
   <ul>
-    
+    <li><?=$name?></li>
+    <li><?=$weight?></li>
+    <li><?=$price?></li>
+    <li><img src="<?=$image?>" alt="<?=$name?>"></li>
+    <li><?=$animal?></li>
+    <li><?=$type?></li>
   </ul>
+  <? endforeach ?>
 </body>
 </html>
